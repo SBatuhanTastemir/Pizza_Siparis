@@ -6,12 +6,6 @@ from datetime import datetime
 with open('Menu.txt', 'w') as file:
     file.write('* Pizza Seçiniz: \n1: Klasik \n2: Margherita \n3: Türk Pizza \n4: Dominos Pizza \n* Sosunuzu Seçin: \n11: Zeytin \n12: Mantar \n13: Keçi Peyniri \n14: Et \n15: Soğan \n16: Mısır \n* Teşekkür Ederiz :)')
 
-# Log dosyası oluşturma
-log_file = open('pizza_order.log', 'w')
-
-# Başlangıç saati logu
-start_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-log_file.write(f"Program başlatıldı: {start_time}\n")
 
 # Pizza superclass
 class Pizza:
